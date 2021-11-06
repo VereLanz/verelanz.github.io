@@ -25,7 +25,7 @@ h2 {
 /* define for class name of a section */
 .header {
   color: lightgray;
-  background: url(assets/space_bg.jpg) center;
+  background: url(assets/backgrounds/galaxy_bg.jpg) center;
   background-size: cover;
 
   height: 60vh; /* percent of vertical height */
@@ -37,7 +37,7 @@ h2 {
 
 /* define for every of this element in that class */
 .header div {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 50px 70px;
 }
 
@@ -104,7 +104,7 @@ h2 {
 
 /* Skills section (3) */
 .skills {
-  background: url(assets/space_bg.jpg) center;
+  background: url(assets/backgrounds/space_bg.jpg) center;
   background-size: cover;
   color: lightgray;
   text-align: center;

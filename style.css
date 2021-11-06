@@ -245,3 +245,30 @@ h2 {
     display: flex;
   }
 }
+
+
+/* footer section (5) */
+.footer {
+  background: url(assets/backgrounds/spacedust_bg.jpg) center;
+  background-size: cover;
+  color: lightgray;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.footer a:hover {
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+}
+

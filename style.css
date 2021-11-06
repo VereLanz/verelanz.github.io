@@ -177,6 +177,41 @@ h2 {
   background-size: cover;
 }
 
+.projects ul li.proj_tile_2 {
+  background: url(assets/projects/cat_eating.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_3 {
+  background: url(assets/projects/cat_screaming.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_4 {
+  background: url(assets/projects/cat_blocking.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_5 {
+  background: url(assets/projects/cat_grass.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_6 {
+  background: url(assets/projects/cat_resting.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_7 {
+  background: url(assets/projects/cat_killing.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_8 {
+  background: url(assets/projects/cat_cutey.jpg) center;
+  background-size: cover;
+}
+
 .projects div {
   display: none;
 

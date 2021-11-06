@@ -25,7 +25,7 @@ h2 {
 /* define for class name of a section */
 .header {
   color: lightgray;
-  background: url(assets/space_bg.jpg) center;
+  background: url(assets/backgrounds/galaxy_bg.jpg) center;
   background-size: cover;
 
   height: 60vh; /* percent of vertical height */
@@ -37,7 +37,7 @@ h2 {
 
 /* define for every of this element in that class */
 .header div {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 50px 70px;
 }
 
@@ -104,7 +104,7 @@ h2 {
 
 /* Skills section (3) */
 .skills {
-  background: url(assets/space_bg.jpg) center;
+  background: url(assets/backgrounds/space_bg.jpg) center;
   background-size: cover;
   color: lightgray;
   text-align: center;
@@ -177,6 +177,41 @@ h2 {
   background-size: cover;
 }
 
+.projects ul li.proj_tile_2 {
+  background: url(assets/projects/cat_eating.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_3 {
+  background: url(assets/projects/cat_screaming.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_4 {
+  background: url(assets/projects/cat_blocking.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_5 {
+  background: url(assets/projects/cat_grass.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_6 {
+  background: url(assets/projects/cat_resting.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_7 {
+  background: url(assets/projects/cat_killing.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_8 {
+  background: url(assets/projects/cat_cutey.jpg) center;
+  background-size: cover;
+}
+
 .projects div {
   display: none;
 
@@ -210,3 +245,30 @@ h2 {
     display: flex;
   }
 }
+
+
+/* footer section (5) */
+.footer {
+  background: url(assets/backgrounds/spacedust_bg.jpg) center;
+  background-size: cover;
+  color: lightgray;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.footer a:hover {
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+}
+

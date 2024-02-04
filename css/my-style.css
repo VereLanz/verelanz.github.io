@@ -1,0 +1,59 @@
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: "Calibri";
+    font-family: "Candara";
+}
+h1 {
+    font-family: "Lucida Sans";
+}
+
+.header {
+    background-image: url("../images/ringe-buch-crop.jpg");
+    background-color: #7e7e7e;
+}
+.logo-link,
+.tagline,
+.call-action-area .price {
+    text-shadow: 1px 2px 1px rgba(0,0,0,.5);
+}
+nav {
+    background: #7e7e7e;
+}
+
+.about {
+    background-image: url("../images/blatt-blumen-wf.png");
+    background-color: #7e7e7e;
+}
+
+.schedule-tbl .speaker-photo .photo {
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none;
+}
+.schedule-time {
+    width: 9%;
+}
+.schedule-img {
+    width: 8%;
+}
+.schedule-slot {
+    width: 20%;
+}
+.schedule-place {
+    width: 23%;
+}
+.schedule-description {
+    width: 40%;
+}
+
+li {
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+ul li:before {
+    content: "- ";
+}

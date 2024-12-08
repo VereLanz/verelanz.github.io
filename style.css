@@ -1,0 +1,274 @@
+/* importing fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;800&family=Baloo+2:wght@400;500;700&family=Comfortaa:wght@500&family=Dongle:wght@400;700&family=Gideon+Roman&family=Patua+One&family=Poiret+One&family=Righteous&display=swap");
+
+/* set global default padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  /* Put the preferred one on the bottom! */
+  font-family: "Baloo 2", cursive;
+  font-family: "Comfortaa", cursive;
+  font-family: "Dongle", sans-serif;
+  font-family: "Gideon Roman", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Arima Madurai", cursive;
+}
+
+section {
+  padding: 30px 5%; /* top&bottom left&right */
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/* define for class name of a section */
+.header {
+  color: lightgray;
+  background: url(assets/backgrounds/galaxy_bg.jpg) center;
+  background-size: cover;
+
+  height: 60vh; /* percent of vertical height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* define for every of this element in that class */
+.header div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 70px;
+}
+
+.header h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 60px;
+}
+
+/* adjust for smaller screens and mobile devices */
+@media screen and (max-width: 750px) {
+  .header div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header {
+    height: 70vh;
+  }
+}
+
+/* About section (section 2) */
+.about {
+  max-width: 900px;
+  margin: 50px auto 70px auto; /* top right bottom left */
+  text-align: center;
+}
+
+.about div {
+  display: flex;
+  text-align: justify;
+  column-gap: 30px;
+}
+
+.about div p {
+  flex: 1; /* every element takes up the same space */
+  /* width: 50%; for a static approach */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.about a {
+  /* buttons */
+  text-decoration: none;
+  background-color: black;
+  color: lightgray;
+  padding: 10px;
+}
+
+.about a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .about div {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+}
+
+/* Skills section (3) */
+.skills {
+  background: url(assets/backgrounds/space_bg.jpg) center;
+  background-size: cover;
+  color: lightgray;
+  text-align: center;
+  margin: 50px auto 70px auto;
+  padding: 0;
+}
+
+.skills-wrapper {
+  background-color: rgba(40, 40, 40, 0.4);
+  padding: 30px 5%;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-around;
+}
+
+.skills ul li {
+  flex: 1; /* if items are different size maybe add above -> space-around */
+  list-style: none;
+}
+
+/* also works like ".skills .title" */
+.skills ul li p.title {
+  font-weight: bold; /* you need the bold font imported as well */
+  margin: 10px 0 10px;
+}
+
+.skills img {
+  width: 100px;
+}
+
+@media screen and (max-width: 750px) {
+  .skills ul {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+/* project section (4) */
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects ul li {
+  list-style: none;
+  height: 300px;
+  min-width: 400px;
+  flex: 1;
+  /* default image before this gets overwritten */
+  background: url(assets/skills/cat_face.png) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_1 {
+  background: url(assets/projects/cat_sleeping.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_2 {
+  background: url(assets/projects/cat_eating.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_3 {
+  background: url(assets/projects/cat_screaming.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_4 {
+  background: url(assets/projects/cat_blocking.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_5 {
+  background: url(assets/projects/cat_grass.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_6 {
+  background: url(assets/projects/cat_resting.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_7 {
+  background: url(assets/projects/cat_killing.jpg) center;
+  background-size: cover;
+}
+
+.projects ul li.proj_tile_8 {
+  background: url(assets/projects/cat_cutey.jpg) center;
+  background-size: cover;
+}
+
+.projects div {
+  display: none;
+
+  /* This will not be displayed until the :hover adds "display: flex" */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  column-gap: 50px;
+}
+
+.projects li:hover div {
+  display: flex;
+}
+
+.projects li div p {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .projects ul li {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .projects li div {
+    display: flex;
+  }
+}
+
+
+/* footer section (5) */
+.footer {
+  background: url(assets/backgrounds/spacedust_bg.jpg) center;
+  background-size: cover;
+  color: lightgray;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: lightgray;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.footer a:hover {
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+}
+
